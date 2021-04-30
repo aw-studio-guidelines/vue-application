@@ -76,7 +76,7 @@ js
 
 # Naming
 
-## Modules
+## `./modules`
 
 ```
 js
@@ -96,7 +96,7 @@ js
 </script>
 ```
 
-## Vue
+## `./vue`
 
 ### `app.js`
 
@@ -108,4 +108,6 @@ const app = new Vue({
 });
 
 export default app;
+```
+
 ```
