@@ -58,6 +58,7 @@ js
 │   ...
 │   
 └───vue
+│   app.js
 │   directives.js
 │   event.bus.js
 │   filters.js
