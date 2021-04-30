@@ -58,7 +58,6 @@ js
 │   ...
 │   
 └───vue
-│   app.js
 │   App.vue
 │   directives.js
 │   event.bus.js
@@ -105,29 +104,18 @@ js
 
 ## `vue`
 
-### `vue/app.js`
+### `vue/index.js`
 
 ```js
-import i18n from './i18n';
 import App from './App.vue';
-
 import store from './store';
 import router from './router';
 import i18n from './i18n';
 
-const app = new Vue({
+export const app = new Vue({
     render: h => h(App),
     store,
     router,
     i18n,
 }).$mount('#app');
-
-export default app;
-```
-
-### `vue/index.js`
-
-```js
-require('./app');
-require('./i18n');
 ```
