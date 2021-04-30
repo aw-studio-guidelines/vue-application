@@ -94,3 +94,18 @@ js
     name: 'OrderIndex'
   }  
 </script>
+```
+
+## Vue
+
+### `app.js`
+
+```js
+import i18n from './i18n';
+
+const app = new Vue({
+    i18n
+});
+
+export default app;
+```
