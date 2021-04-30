@@ -76,6 +76,13 @@ js
 
 # Naming
 
+## `app.js`
+
+```js
+require('./app');
+require('./vue');
+```
+
 ## `./modules`
 
 ```
@@ -110,4 +117,9 @@ const app = new Vue({
 export default app;
 ```
 
+### `vue/index.js`
+
+```js
+require('./app');
+require('./i18n');
 ```
