@@ -3,9 +3,40 @@
 ```
 js
 └───app
+│   api.service.js
+│   config.js
+│   constants.js
+│   enums.js
+│   helpers.js
+│   types.js
+│   
 └───modules
-└───partials
+│   └───auth
+│   │   └───views
+│   │   │   └───components
+│   │   │   │   Header.vue
+│   │   │   │   ...
+│   │   │   │
+│   │   │   Login.vue
+│   │   │   Register.vue
+│   │   │   ...
+│   │   │
+│   │   auth.api.js
+│   │   auth.module.js
+│   │   ...
+│   │
+│   ...
+│
 └───templates
+│   └───components
+│   │   Header.vue
+│   │   Sidebar.vue
+│   │   ...
+│   │
+│   Base.vue
+│   Page.vue
+│   Wrapper.vue
+│   
 └───ui
 │   └───form
 │   │   Input.vue
