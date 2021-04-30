@@ -96,9 +96,9 @@ js
 </script>
 ```
 
-## `./vue`
+## `vue`
 
-### `app.js`
+### `vue/app.js`
 
 ```js
 import i18n from './i18n';
