@@ -3,27 +3,31 @@
 ```
 js
 └───app
-│   api.service.js
+│   api.js
 │   config.js
 │   constants.js
-│   enums.js
 │   helpers.js
+│   index.js
+│   states.js
 │   types.js
+│   window.js
+│   ...
 │   
 └───modules
 │   └───auth
-│   │   └───views
-│   │   │   └───components
-│   │   │   │   Header.vue
-│   │   │   │   ...
-│   │   │   │
-│   │   │   Login.vue
-│   │   │   Register.vue
+│   │   └───components
+│   │   │   Header.vue
 │   │   │   ...
 │   │   │
-│   │   auth.api.js
-│   │   auth.module.js
+│   │   └───concerns
+│   │   │   auth.api.js
+│   │   │   auth.module.js
+│   │   │   ...
+│   │   │
+│   │   Login.vue
+│   │   Register.vue
 │   │   ...
+│   │
 │   │
 │   ...
 │
@@ -33,9 +37,10 @@ js
 │   │   Sidebar.vue
 │   │   ...
 │   │
-│   Base.vue
-│   Page.vue
-│   Wrapper.vue
+│   BasePage.vue
+│   DefaultPage.vue
+│   RouterWrapper.vue
+│   ...
 │   
 └───ui
 │   └───form
@@ -54,14 +59,18 @@ js
 │   
 └───vue
 │   directives.js
+│   event.bus.js
 │   filters.js
 │   i18n.js
+│   index.js
 │   libraries.js
 │   mixins.js
 │   router.js
 │   store.js
 │   ...
-    
+│
+ app.js
+ App.vue
 ```
 
 # Naming
