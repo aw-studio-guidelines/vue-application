@@ -59,6 +59,7 @@ js
 │   
 └───vue
 │   app.js
+│   App.vue
 │   directives.js
 │   event.bus.js
 │   filters.js
@@ -71,7 +72,6 @@ js
 │   ...
 │
  app.js
- App.vue
 ```
 
 # Naming
@@ -109,13 +109,18 @@ js
 
 ```js
 import i18n from './i18n';
+import App from './App.vue';
 
-import App from './App';
+import store from './store';
+import router from './router';
+import i18n from './i18n';
 
 const app = new Vue({
     render: h => h(App),
-    i18n
-});
+    store,
+    router,
+    i18n,
+}).$mount('#app');
 
 export default app;
 ```
